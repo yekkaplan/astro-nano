@@ -1,5 +1,6 @@
 {
-  "name": "astro-nano",
+  "name": "yunus-emre-kaplan-blog",
+  "author": "Yunus Emre Kaplan",
   "type": "module",
   "version": "1.0.0",
   "scripts": {

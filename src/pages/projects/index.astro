@@ -5,9 +5,14 @@ import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import { PROJECTS } from "@consts";
 
-const projects = (await getCollection("projects"))
-  .filter(project => !project.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+let projects = [];
+try {
+  projects = (await getCollection("projects"))
+    .filter(project => !project.data.draft)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+} catch (e) {
+  // Handle case where collection is empty
+}
 ---
 
 <PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
@@ -18,11 +23,15 @@ const projects = (await getCollection("projects"))
       </div>
       <ul class="animate flex flex-col gap-4">
         {
-          projects.map((project) => (
-            <li>
-              <ArrowCard entry={project}/>
-            </li>
-          ))
+          projects.length > 0 ? (
+            projects.map((project) => (
+              <li>
+                <ArrowCard entry={project}/>
+              </li>
+            ))
+          ) : (
+            <p>There are no projects yet. Check back later!</p>
+          )
         }
       </ul>
     </div>

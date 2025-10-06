@@ -7,11 +7,21 @@ type Context = {
 }
 
 export async function GET(context: Context) {
-  const blog = (await getCollection("blog"))
-  .filter(post => !post.data.draft);
+  let blog = [];
+  try {
+    blog = (await getCollection("blog"))
+      .filter(post => !post.data.draft);
+  } catch (e) {
+    // Handle case where collection is empty
+  }
 
-  const projects = (await getCollection("projects"))
-    .filter(project => !project.data.draft);
+  let projects = [];
+  try {
+    projects = (await getCollection("projects"))
+      .filter(project => !project.data.draft);
+  } catch (e) {
+    // Handle case where collection is empty
+  }
 
   const items = [...blog, ...projects]
     .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf());

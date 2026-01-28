@@ -7,11 +7,6 @@ import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 
-const blog = (await getCollection("blog"))
-  .filter(post => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
-
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -39,30 +34,13 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-            Mobil ve web uygulamaları geliştiren bir yazılım geliştiricisiyim. Özellikle Flutter, React ve React Native ile yüksek performanslı, kullanıcı odaklı deneyimler tasarlıyor; beIN MEDIA GROUP / Digiturk bünyesinde uçtan uca modern uygulamalar geliştiriyorum.
+            Mobil ve web uygulamaları geliştirme konusunda deneyimli bir yazılım geliştiricisiyim. Flutter, React ve React Native kullanarak yüksek performanslı ve kullanıcı odaklı çözümler üretiyorum. DIGITURK’te hem front-end hem back-end geliştirme süreçlerinde, API ve Firebase entegrasyonlarıyla ölçeklenebilir ve modern uygulamalar oluşturuyorum.
+          </p>
+          <p class="animate text-sm opacity-75">
+            Software developer with experience in building mobile and web applications. Creates high-performance, user-focused solutions using Flutter, React, and React Native. At DIGITURK, contributes to both front-end and back-end development, building scalable and modern applications with API and Firebase integrations.
           </p>
         </article>
       </section>
-
-      {blog.length > 0 &&
-        <section class="animate space-y-6">
-          <div class="flex flex-wrap gap-y-2 items-center justify-between">
-            <h5 class="font-semibold text-black dark:text-white">
-              Son yazılar
-            </h5>
-            <Link href="/blog">
-              Tüm yazılar
-            </Link>
-          </div>
-          <ul class="flex flex-col gap-4">
-            {blog.map(post => (
-              <li>
-                <ArrowCard entry={post} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      }
 
       {work.length > 0 &&
         <section class="animate space-y-6">
@@ -121,7 +99,7 @@ const work = await Promise.all(
         </h5>
         <article>
           <p>
-            Eğer projeler, iş fırsatları ya da sadece selam vermek için iletişime geçmek istersen; sosyal medyadan ya da e-posta üzerinden ulaşabilirsin.
+            Eğer projeler, iş fırsatları ya da sadece selam vermek için iletişime geçmek istersen; sosyal medyadan, e-posta veya telefon üzerinden ulaşabilirsin.
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
@@ -137,6 +115,11 @@ const work = await Promise.all(
             <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
               {SITE.EMAIL}
             </Link>
+          </li>
+          <li class="line-clamp-1">
+            <a href="tel:+905428030311" aria-label={`Phone ${SITE.NAME}`} class="underline">
+              0 542 803 03 11
+            </a>
           </li>
         </ul>
       </section>

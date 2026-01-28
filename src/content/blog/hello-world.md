@@ -1,16 +1,21 @@
 ---
 title: "Merhaba Dünya"
-description: "Blog koleksiyonunun ve RSS/sitemap entegrasyonlarının düzgün çalışması için örnek bir başlangıç yazısı."
+description: "Mobil ve web geliştirme üzerine ilk blog yazım."
 date: 2026-01-01
 draft: false
 ---
 
-Bu, **örnek** bir blog yazısıdır.
+Merhaba, ben Yunus Emre Kaplan.
 
-Bu yazı sayesinde:
+Mobil ve web uygulamaları geliştirme konusunda deneyimli bir yazılım geliştiricisiyim. Flutter, React ve React Native kullanarak yüksek performanslı ve kullanıcı odaklı çözümler üretiyorum. DIGITURK’te hem front-end hem back-end geliştirme süreçlerinde, API ve Firebase entegrasyonlarıyla ölçeklenebilir ve modern uygulamalar oluşturuyorum.
 
-- `blog` koleksiyonu boş olmadığı için sitemap ve RSS üretimi sorunsuz çalışır.
-- Netlify üzerinde `@astrojs/sitemap` entegrasyonu, içerik koleksiyonlarından gelen sayfaları işlerken hata vermez.
+Bu blogda ağırlıklı olarak:
 
-İstediğin zaman bu yazıyı düzenleyebilir veya gerçek içeriklerinle değiştirebilirsin.
+- Flutter ve mobil uygulama mimarileri
+- React / React Native tarafında öğrendiklerim
+- Performans, ölçeklenebilirlik ve gerçek hayattan proje deneyimleri
+
+üzerine notlar paylaşmayı planlıyorum.
+
+Okuduğun için teşekkürler, ilerleyen yazılarda görüşmek üzere.
 

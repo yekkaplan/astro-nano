@@ -10,22 +10,22 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Yunus Emre Kaplan's personal blog and portfolio.",
+  DESCRIPTION: "Yunus Emre Kaplan'ın mobil uygulama geliştirme odaklı kişisel blogu ve portfolyosu.",
 };
 
 export const BLOG: Metadata = {
   TITLE: "Blog",
-  DESCRIPTION: "A collection of articles on topics I am passionate about.",
+  DESCRIPTION: "Mobil ve web geliştirme ile ilgili, ilgi duyduğum konularda yazılar.",
 };
 
 export const WORK: Metadata = {
   TITLE: "Work",
-  DESCRIPTION: "Where I have worked and what I have done.",
+  DESCRIPTION: "Çalıştığım şirketler ve üstlendiğim roller.",
 };
 
 export const PROJECTS: Metadata = {
   TITLE: "Projects",
-  DESCRIPTION: "A collection of my projects, with links to repositories and demos.",
+  DESCRIPTION: "Kişisel ve profesyonel projelerimden seçkiler.",
 };
 
 export const SOCIALS: Socials = [
@@ -35,10 +35,10 @@ export const SOCIALS: Socials = [
   },
   { 
     NAME: "github",
-    HREF: "https://github.com/yunusemrekaplan"
+  HREF: "https://github.com/yekaplan"
   },
   { 
     NAME: "linkedin",
-    HREF: "https://www.linkedin.com/in/yunusemrekaplan",
+  HREF: "https://www.linkedin.com/in/yekaplan/",
   }
 ];

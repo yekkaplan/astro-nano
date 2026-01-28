@@ -1,0 +1,359 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import { SITE } from "@consts";
+---
+
+<PageLayout
+  title="DriveLoop - Gözcü Gizlilik Politikası"
+  description="DriveLoop - Gözcü mobil uygulaması için gizlilik politikası."
+>
+  <Container>
+    <div class="space-y-8">
+      <header class="space-y-2 animate">
+        <h1 class="text-2xl font-semibold text-black dark:text-white">
+          DriveLoop - Gizlilik Politikası
+        </h1>
+        <p class="text-xs opacity-60">
+          Son Güncelleme: 28 Ocak 2026
+        </p>
+        <p class="text-sm opacity-75">
+          DriveLoop ("biz", "bizim" veya "uygulama"), Android cihazlar için geliştirilmiş bir araç kamerası uygulamasıdır. Bu Gizlilik Politikası, uygulamamızı kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.
+        </p>
+        <p class="text-sm font-medium">
+          Gizliliğiniz bizim için önemlidir. DriveLoop, tüm verileri yalnızca cihazınızda yerel olarak saklamak üzere tasarlanmıştır. Kişisel verilerinizi herhangi bir üçüncü taraf veya harici sunucularla toplamıyor, iletmiyor veya paylaşmıyoruz.
+        </p>
+      </header>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Topladığımız Bilgiler
+        </h2>
+
+        <div class="space-y-2 text-sm">
+          <h3 class="font-semibold">
+            1. Kamera ve Video Verileri
+          </h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><span class="font-medium">Ne:</span> Cihazınızın kamerasından video kayıtları</li>
+            <li><span class="font-medium">Neden:</span> Sürüş görüntülerini kaydetmek için araç kamerası işlevi sağlamak</li>
+            <li><span class="font-medium">Depolama:</span> Cihazınızda uygulamanın özel klasöründe yerel olarak saklanır</li>
+            <li><span class="font-medium">Saklama Süresi:</span> Sizin tarafınızdan yönetilir; eski kayıtlar depolama kotası ayarlarınıza göre otomatik olarak silinir</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2 text-sm">
+          <h3 class="font-semibold">
+            2. Ses Verileri (İsteğe Bağlı)
+          </h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><span class="font-medium">Ne:</span> Video ile birlikte kaydedilen ses kayıtları</li>
+            <li><span class="font-medium">Neden:</span> Sürüş sırasında araç içi sesi kaydetmek</li>
+            <li><span class="font-medium">Depolama:</span> Video dosyalarının bir parçası olarak yerel depolanır</li>
+            <li><span class="font-medium">Kontrol:</span> Uygulama ayarlarından ses kaydını etkinleştirebilir veya devre dışı bırakabilirsiniz</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2 text-sm">
+          <h3 class="font-semibold">
+            3. Konum Verileri (İsteğe Bağlı)
+          </h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><span class="font-medium">Ne:</span> GPS koordinatları, hız, yükseklik ve yön</li>
+            <li><span class="font-medium">Neden:</span> Video kayıtlarına telemetri bilgisi eklemek ve mevcut hızı göstermek</li>
+            <li><span class="font-medium">Depolama:</span> Video kayıtlarının yanında yan dosyalarda (.json ve .srt) yerel olarak saklanır</li>
+            <li><span class="font-medium">Kontrol:</span> Uygulama ayarlarından GPS günlüğünü etkinleştirebilir veya devre dışı bırakabilirsiniz</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2 text-sm">
+          <h3 class="font-semibold">
+            4. İvmeölçer Verileri
+          </h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><span class="font-medium">Ne:</span> Cihaz ivmeölçerinden hareket sensörü verileri</li>
+            <li><span class="font-medium">Neden:</span> Acil durum kaydı için ani darbeleri veya çarpışmaları algılamak</li>
+            <li><span class="font-medium">Depolama:</span> Saklanmaz; yalnızca gerçek zamanlı olarak işlenir</li>
+            <li><span class="font-medium">Kontrol:</span> Uygulama ayarlarından acil durum kaydını etkinleştirebilir veya devre dışı bırakabilirsiniz</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Veri Depolama ve Güvenlik
+        </h2>
+
+        <div class="space-y-2 text-sm">
+          <h3 class="font-semibold">
+            Yalnızca Yerel Depolama
+          </h3>
+          <p class="opacity-75">
+            DriveLoop tarafından toplanan tüm veriler <span class="font-medium">yalnızca cihazınızda</span> saklanır. Biz:
+          </p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Herhangi bir veriyi bulut sunucularına yüklemiyoruz</li>
+            <li>Verileri üçüncü taraflarla paylaşmıyoruz</li>
+            <li>Analitik veya kullanım istatistikleri toplamıyoruz</li>
+            <li>Reklam SDK'ları kullanmıyoruz</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2 text-sm">
+          <h3 class="font-semibold">
+            Depolama Konumu
+          </h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Video dosyaları şurada saklanır: <code>Android/data/com.yekkaplan.driveloop/files/Movies/DriveLoop/</code></li>
+            <li>Acil durum kayıtları ayrı bir <code>Emergency/</code> alt klasöründe saklanır</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2 text-sm">
+          <h3 class="font-semibold">
+            Veri Saklama
+          </h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Depolama Kotası ayarı (2-50 GB) aracılığıyla veri saklamayı siz kontrol edersiniz</li>
+            <li>Kota dolduğunda, en eski kayıtlar otomatik olarak silinir</li>
+            <li>Acil durum kayıtları korunur ve otomatik olarak silinmez</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Gerekli İzinler
+        </h2>
+        <p class="text-sm opacity-75">
+          DriveLoop aşağıdaki izinleri gerektirir:
+        </p>
+        <div class="overflow-x-auto">
+          <table class="text-xs md:text-sm border-collapse min-w-full">
+            <thead>
+              <tr>
+                <th class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-left">
+                  İzin
+                </th>
+                <th class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-left">
+                  Amaç
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 font-medium">
+                  Kamera
+                </td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">
+                  Video görüntüsü kaydetmek
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 font-medium">
+                  Mikrofon
+                </td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">
+                  Ses kaydetmek (isteğe bağlı, devre dışı bırakılabilir)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 font-medium">
+                  Konum
+                </td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">
+                  GPS verilerini günlüğe kaydetmek ve hızı göstermek (isteğe bağlı, devre dışı bırakılabilir)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 font-medium">
+                  Depolama
+                </td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">
+                  Video kayıtlarını cihazınıza kaydetmek
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 font-medium">
+                  Ön Plan Servisi
+                </td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">
+                  Uygulama arka plandayken kayda devam etmek
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 font-medium">
+                  Uyandırma Kilidi
+                </td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">
+                  Kayıt sırasında cihazı uyanık tutmak
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 font-medium">
+                  Bildirimler
+                </td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">
+                  Bildirim çubuğunda kayıt durumunu göstermek
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Veri Paylaşımı ve Üçüncü Taraflar
+        </h2>
+        <p class="text-sm opacity-75">
+          <span class="font-medium">Verilerinizi herhangi bir üçüncü tarafla paylaşmıyoruz.</span>
+        </p>
+        <ul class="list-disc pl-5 text-sm space-y-1">
+          <li>DriveLoop reklam içermez</li>
+          <li>Analitik hizmetler kullanmaz</li>
+          <li>Harici sunucularla iletişim kurmaz</li>
+          <li>Sosyal medya platformlarıyla entegre değildir</li>
+        </ul>
+        <p class="text-sm opacity-75">
+          Verilerinizin cihazınızı terk etmesinin tek yolu, sistem paylaşım özelliğini kullanarak bir video dosyasını manuel olarak paylaşmanızdır.
+        </p>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Çocukların Gizliliği
+        </h2>
+        <p class="text-sm opacity-75">
+          DriveLoop 13 yaşından küçük çocukların kullanımına yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamıyoruz.
+        </p>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Bu Politikadaki Değişiklikler
+        </h2>
+        <p class="text-sm opacity-75">
+          Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Herhangi bir değişiklik, güncellenmiş bir "Son Güncelleme" tarihi ile yansıtılacaktır. Bu politikayı periyodik olarak gözden geçirmenizi öneririz.
+        </p>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Haklarınız
+        </h2>
+        <ul class="list-disc pl-5 text-sm space-y-1">
+          <li>
+            Tüm veriler cihazınızda yerel olarak saklandığından, tam kontrole sahipsiniz.
+          </li>
+          <li>
+            <span class="font-medium">Erişim:</span> Tüm kayıtlara uygulamanın Dosyalar bölümünden erişebilirsiniz.
+          </li>
+          <li>
+            <span class="font-medium">Silme:</span> Tek tek kayıtları veya tüm verileri istediğiniz zaman silebilirsiniz.
+          </li>
+          <li>
+            <span class="font-medium">Dışa Aktarma:</span> Sistem paylaşım özelliğini kullanarak herhangi bir kaydı paylaşabilir/dışa aktarabilirsiniz.
+          </li>
+          <li>
+            <span class="font-medium">Devre Dışı Bırakma:</span> Ayarlardan herhangi bir isteğe bağlı veri toplamayı (ses, GPS) devre dışı bırakabilirsiniz.
+          </li>
+        </ul>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Bize Ulaşın
+        </h2>
+        <p class="text-sm opacity-75">
+          Bu Gizlilik Politikası hakkında sorularınız varsa, lütfen bizimle iletişime geçin:
+        </p>
+        <p class="text-sm">
+          <span class="font-medium">E-posta:</span> <a class="underline" href="mailto:privacy@driveloop.app">privacy@driveloop.app</a><br />
+          <span class="font-medium">Geliştirici:</span> {SITE.NAME}<br />
+          <span class="font-medium">Web Sitesi:</span> <a class="underline" href="https://driveloop.app" target="_blank" rel="noreferrer">driveloop.app</a>
+        </p>
+      </section>
+
+      <section class="space-y-3 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Özet
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="text-xs md:text-sm border-collapse min-w-full">
+            <thead>
+              <tr>
+                <th class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-left">
+                  Veri Türü
+                </th>
+                <th class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-left">
+                  Toplanan
+                </th>
+                <th class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-left">
+                  Yerel Depolama
+                </th>
+                <th class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-left">
+                  Sunuculara Gönderim
+                </th>
+                <th class="border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-left">
+                  Kullanıcı Kontrolü
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Video</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">✅</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">✅</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Tam</td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Ses</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">✅ (isteğe bağlı)</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">✅</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Etkinleştir/Devre Dışı</td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">GPS/Konum</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">✅ (isteğe bağlı)</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">✅</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Etkinleştir/Devre Dışı</td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">İvmeölçer</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">✅ (isteğe bağlı)</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌ (yalnızca gerçek zamanlı)</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Etkinleştir/Devre Dışı</td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Kişisel Bilgi</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">N/A</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">N/A</td>
+              </tr>
+              <tr>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">Analitik</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">N/A</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">❌</td>
+                <td class="border border-zinc-200 dark:border-zinc-800 px-2 py-1">N/A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="space-y-1 animate text-xs opacity-60">
+        <p>
+          Bu gizlilik politikası 28 Ocak 2026 tarihinden itibaren geçerlidir.
+        </p>
+      </section>
+    </div>
+  </Container>
+</PageLayout>
+

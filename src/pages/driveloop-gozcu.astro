@@ -1,0 +1,86 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+import { SITE } from "@consts";
+
+import ss1 from "../dashcamassets/ss1.png";
+import ss2 from "../dashcamassets/ss2.png";
+import ss3 from "../dashcamassets/ss3.png";
+import ss4 from "../dashcamassets/ss4.png";
+import ss5 from "../dashcamassets/ss5.png";
+---
+
+<PageLayout
+  title="DriveLoop - Gözcü"
+  description="DriveLoop - Gözcü sürüş asistanı ve araç içi kayıt uygulaması."
+>
+  <Container>
+    <div class="space-y-10">
+      <header class="space-y-3 animate">
+        <h1 class="text-2xl font-semibold text-black dark:text-white">
+          DriveLoop - Gözcü
+        </h1>
+        <p class="text-sm opacity-75">
+          {SITE.NAME} tarafından geliştirilen, sürüş sırasında yolculuklarını kaydetmeni ve önemli anları güvenle saklamanı sağlayan mobil bir sürüş asistanı.
+        </p>
+        <div class="text-sm opacity-75">
+          Uygulama, araç içi kamera görüntülerini kayıt altına alır, sürüş esnasındaki önemli anları kolayca işaretlemeni sağlar ve kapalı devre bir deneyim sunar. 
+          Veriler mümkün olduğunca cihaz içinde tutulur ve gizlilik odaklı bir mimari ile tasarlanmıştır.
+        </div>
+        <div class="text-sm">
+          <Link href="/driveloop-gozcu-gizlilik" aria-label="DriveLoop - Gözcü gizlilik politikası">
+            DriveLoop - Gözcü gizlilik politikası
+          </Link>
+        </div>
+      </header>
+
+      <section class="space-y-4 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Öne çıkan özellikler
+        </h2>
+        <ul class="list-disc pl-5 space-y-2 text-sm">
+          <li>
+            Sürekli video kaydı ile <span class="font-medium">araç içi kamera (dashcam)</span> deneyimi
+          </li>
+          <li>
+            Tek dokunuşla <span class="font-medium">olay işaretleme</span> ve kritik anlara hızlı erişim
+          </li>
+          <li>
+            Depolama alanını korumak için <span class="font-medium">otomatik eski kayıt yönetimi</span>
+          </li>
+          <li>
+            Cihaz üzerinde çalışacak şekilde tasarlanmış, <span class="font-medium">gizlilik öncelikli mimari</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="space-y-4 animate">
+        <h2 class="font-semibold text-black dark:text-white">
+          Ekran görüntüleri
+        </h2>
+        <p class="text-sm opacity-75">
+          Aşağıda DriveLoop - Gözcü uygulamasının bazı ekran görüntülerini görebilirsin.
+        </p>
+        <div class="grid gap-4 md:grid-cols-3">
+          <figure class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
+            <img src={ss1.src} alt="DriveLoop - Gözcü ekran görüntüsü 1" loading="lazy" class="w-full h-full object-cover" />
+          </figure>
+          <figure class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
+            <img src={ss2.src} alt="DriveLoop - Gözcü ekran görüntüsü 2" loading="lazy" class="w-full h-full object-cover" />
+          </figure>
+          <figure class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
+            <img src={ss3.src} alt="DriveLoop - Gözcü ekran görüntüsü 3" loading="lazy" class="w-full h-full object-cover" />
+          </figure>
+          <figure class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 md:col-span-2">
+            <img src={ss4.src} alt="DriveLoop - Gözcü ekran görüntüsü 4" loading="lazy" class="w-full h-full object-cover" />
+          </figure>
+          <figure class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
+            <img src={ss5.src} alt="DriveLoop - Gözcü ekran görüntüsü 5" loading="lazy" class="w-full h-full object-cover" />
+          </figure>
+        </div>
+      </section>
+    </div>
+  </Container>
+</PageLayout>
+

@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import { HOME } from "@consts";
 
 type Context = {
@@ -7,7 +7,7 @@ type Context = {
 }
 
 export async function GET(context: Context) {
-  let blog = [];
+  let blog: CollectionEntry<"blog">[] = [];
   try {
     blog = (await getCollection("blog"))
       .filter(post => !post.data.draft);
@@ -15,7 +15,7 @@ export async function GET(context: Context) {
     // Handle case where collection is empty
   }
 
-  let projects = [];
+  let projects: CollectionEntry<"projects">[] = [];
   try {
     projects = (await getCollection("projects"))
       .filter(project => !project.data.draft);

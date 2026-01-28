@@ -1,11 +1,11 @@
 ---
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import { PROJECTS } from "@consts";
 
-let projects = [];
+let projects: CollectionEntry<"projects">[] = [];
 try {
   projects = (await getCollection("projects"))
     .filter(project => !project.data.draft)
